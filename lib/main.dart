@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Social Media Profile Screen',
       home: ProfileScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
