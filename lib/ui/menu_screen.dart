@@ -34,6 +34,8 @@ class _MenuScreenState extends State<MenuScreen> {
         child: _screenOptions[_currentIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         currentIndex: _currentIndex,
         selectedItemColor: Colors.black,
         onTap: _onItemTapped,
