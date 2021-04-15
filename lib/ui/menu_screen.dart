@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_profile_screen/ui/profile_screen.dart';
 import 'package:social_media_profile_screen/utils/constants.dart';
 
 class MenuScreen extends StatefulWidget {
@@ -11,12 +12,12 @@ class _MenuScreenState extends State<MenuScreen> {
   int _currentIndex = 0;
 
   // A list containing all the screens
-  static const _screenOptions = [
-    Text("First screen"),
-    Text("Second screen"),
-    Text("Third screen"),
-    Text("Fourth screen"),
-    Text("Fifth screen"),
+  var _screenOptions = [
+    Text("Home screen"),
+    Text("Search screen"),
+    Text("Reels screen"),
+    Text("Shop screen"),
+    ProfileScreen(),
   ];
 
   /// A function which will be used to update the current screen
