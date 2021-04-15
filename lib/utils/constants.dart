@@ -6,6 +6,9 @@ const kProfileName = "Piero Borgo";
 const kProfileDesc = "Product designer, founder of Leevia, Lego bricks lover.";
 const kProfileLink = "leevia.com";
 
+const kFollowButton = "Follow";
+const kMessageButton = "Message";
+
 const kPaddingTop = 20.0;
 const kPaddingLeft = 20.0;
 const kPaddingRight = 20.0;
