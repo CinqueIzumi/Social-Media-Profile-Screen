@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_profile_screen/widgets/user_posts.dart';
 
 class CustomTabBar extends StatelessWidget {
   @override
@@ -45,7 +46,7 @@ class CustomTabBar extends StatelessWidget {
               Expanded(
                 child: TabBarView(
                   children: [
-                    Center(child: Text("First Tab")),
+                    UserPosts(),
                     Center(child: Text("Second Tab")),
                     Center(child: Text("Third Tab")),
                     Center(child: Text("Fourth Tab")),
