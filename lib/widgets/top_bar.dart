@@ -4,9 +4,7 @@ import 'package:social_media_profile_screen/utils/constants.dart';
 class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(20),
-      child: Row(
+    return Row(
         children: [
           Text(
             kProfileUsername,
@@ -20,7 +18,6 @@ class TopBar extends StatelessWidget {
           SizedBox(width: 30,),
           Image.asset(kIconsPath + "menu.png"),
         ],
-      ),
-    );
+      );
   }
 }

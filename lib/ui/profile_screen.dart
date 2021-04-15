@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_profile_screen/utils/constants.dart';
 import 'package:social_media_profile_screen/widgets/top_bar.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -8,7 +9,14 @@ class ProfileScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            TopBar(),
+            Padding(
+              padding: EdgeInsets.fromLTRB(kPaddingLeft, kPaddingTop, kPaddingRight, kPaddingBottom),
+              child: Column(
+                children: [
+                  TopBar(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
