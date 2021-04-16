@@ -10,8 +10,14 @@ class UserPosts extends StatelessWidget {
       ),
       itemCount: 9,
       itemBuilder: (BuildContext context, int index) {
-        return Image(
-          image: AssetImage(kImagePath + "user_post_${index + 1}.png"),
+        return Padding(
+          padding: EdgeInsets.all(1),
+          child: Image(
+            fit: BoxFit.cover,
+            image: AssetImage(
+              kImagePath + "user_post_${index + 1}.png",
+            ),
+          ),
         );
       },
     );

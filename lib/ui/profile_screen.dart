@@ -17,6 +17,7 @@ class ProfileScreen extends StatelessWidget {
             Padding(
               padding: EdgeInsets.fromLTRB(kPaddingLeft, kPaddingTop, kPaddingRight, kPaddingBottom),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TopBar(),
                   SizedBox(height: 10,),

@@ -8,6 +8,7 @@ class UserInfo extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(kProfileName, style: Theme.of(context).textTheme.bodyText1,),
+        SizedBox(height: 4,),
         Text(kProfileDesc, style: Theme.of(context).textTheme.bodyText2,),
         Text(kProfileLink, style: Theme.of(context).textTheme.bodyText2?.copyWith(color: Colors.blueAccent),),
       ],
