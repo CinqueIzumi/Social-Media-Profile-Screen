@@ -7,9 +7,16 @@ class InteractionBar extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: ElevatedButton(
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              primary: Colors.white,
+              backgroundColor: Color(0xFF3898F3),
+            ),
             onPressed: () {},
-            child: Text(kFollowButton),
+            child: Text(
+              kFollowButton,
+              style: Theme.of(context).textTheme.button?.copyWith(color: Colors.white),
+            ),
           ),
           flex: 4,
         ),
