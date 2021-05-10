@@ -27,7 +27,11 @@ class ProfileScreen extends StatelessWidget {
                   SizedBox(height: 10,),
                   InteractionBar(),
                   SizedBox(height: 10,),
-                  StoryBar(),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: StoryBar(),
+                  ),
+
                 ],
               ),
             ),
